@@ -19,7 +19,6 @@ const SignIn: React.FC = () => {
       formRef.current?.setErrors({});
 
       const schema = Yup.object().shape({
-        name: Yup.string().required('Nome obrigatório'),
         email: Yup.string()
           .required('E-mail obrigatório')
           .email('E-mail inválido'),
